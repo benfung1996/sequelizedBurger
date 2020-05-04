@@ -7,7 +7,8 @@ if (process.env.JAWSDB_URL) {
 } else {
     connection = new Sequelize("burgers_db", "root", "password", {
         host: "localhost",
-        dialect: "mysql"
+        dialect: "mysql",
+        port: "8080"
     });
 };
 
